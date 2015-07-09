@@ -3,6 +3,7 @@ import React from 'react';
 // probably as it is in react-router.RoutHandler
 import {RouteHandler} from 'react-router';
 class Main extends React.Component {
+
 	render() {
 		return (
 			<div className="main-container">
@@ -22,7 +23,7 @@ class Main extends React.Component {
 						what child path we hit
 					 */}
 
-					<RouteHandler />
+					<RouteHandler {...this.props}/>
 				</div>
 			</div>
 		);

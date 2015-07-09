@@ -6,11 +6,13 @@ import Main from '../components/Main';
 import Home from '../components/Home';
 import {Router, Route, DefaultRoute} from 'react-router';
 import ConcTimeArray from '../components/ConcTimeArray';
+import ConcTimeGroup from '../components/ConcTimeGroup';
 
 export default (
     //whenever we hit the root of our app, render the main component
     <Route name="app" path="/" handler={Main}>
         <Route name="ctarray" path="facetct" handler={ConcTimeArray} />
+		<Route name="ctgroup" path="groupct" handler={ConcTimeGroup} />
         <DefaultRoute handler={Home} />
     </Route>
 );

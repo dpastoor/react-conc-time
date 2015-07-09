@@ -5,6 +5,7 @@
 import React from 'react';
 import {LineChart} from 'react-d3';
 class IndConcTime extends React.Component {
+
     render() {
         var styles = {
                 padding: '25px'
@@ -14,8 +15,8 @@ class IndConcTime extends React.Component {
                 <LineChart
                     legend={this.props.legend}
                     data={this.props.data}
-                    width={400}
-                    height={200}
+                    width={this.props.width}
+                    height={this.props.height}
                     />
             </div>
         );

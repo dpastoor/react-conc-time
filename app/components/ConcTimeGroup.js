@@ -1,7 +1,8 @@
 import React from 'react';
 import IndConcTime from './IndConcTime';
 import _ from 'lodash';
-class ConcTimeArray extends React.Component {
+
+class ConcTimeGroup extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -48,12 +49,9 @@ class ConcTimeArray extends React.Component {
 	render() {
 		return (
             <div>
-				{_.map(this.state.data, (d) => {
-				return <IndConcTime key={d.name} data={d} legend={false} width={300} height={200} />;
-				}
-			)}
+				<IndConcTime data={this.state.data} legend={true} width={1000} height={600} />
 			</div>
 		);
 	}
 }
-export default ConcTimeArray;
+export default ConcTimeGroup;
