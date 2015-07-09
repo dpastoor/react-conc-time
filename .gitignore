@@ -1,6 +1,11 @@
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
+.idea/
+public/bundle.js
+node_modules
+*.sublime-project
+*.sublime-workspace
 
 # Folder config file
 Desktop.ini
