@@ -19,6 +19,7 @@ class Main extends React.Component {
 							<li><Link to="app">Home</Link></li>
 							<li><Link to="ctarray">facet-conctime</Link></li>
 							<li><Link to="ctgroup">conctime</Link></li>
+							<li><Link to="cttest">testct</Link></li>
 						</ul>
 					</div>
 				</nav>
